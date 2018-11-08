@@ -1,0 +1,33 @@
+{
+  "name": "kick-off-react",
+  "private": true,
+  "version": "1.0.0",
+  "description": "&lt;KickOffReact />, presentación para IronHack + Infojobs Workshop de React",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miduga/kick-off-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@s-ui/mono": "1",
+    "@s-ui/precommit": "2"
+  },
+  "config": {
+    "sui-mono": {}
+  },
+  "validate-commit-msg": {
+    "types": "@s-ui/mono/src/types"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
+}

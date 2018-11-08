@@ -1,0 +1,21 @@
+dist: trusty
+
+language: node_js
+
+node_js:
+  - "10"
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - echo "nothing to install from root"
+
+env:
+  - PROJECT=frontend-polls
+  - PROJECT=frontend-presentation
+
+script: cd packages/$PROJECT && npm install && npm run build && npm run deploy

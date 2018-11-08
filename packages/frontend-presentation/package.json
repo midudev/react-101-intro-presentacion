@@ -1,0 +1,18 @@
+{
+  "name": "frontend-presentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "deploy": "npx @s-ui/deploy spa the-next-javascript-presentation ./dist --now --public",
+    "build": "mdx-deck build deck.mdx && cp -r ./assets ./dist/assets",
+    "test": "true"
+  },
+  "dependencies": {
+    "react": "16",
+    "react-tagcloud": "1.3.1"
+  },
+  "devDependencies": {
+    "mdx-deck": "1.7.7"
+  }
+}
