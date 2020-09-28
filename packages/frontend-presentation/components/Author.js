@@ -8,6 +8,12 @@ const Wrapper = styled.section`
   justify-content: center;
   margin-top: 128px;
 `
+const H1 = styled.p`
+  margin: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+`
 
 const Text = styled.p`
   margin: 4px;
@@ -20,11 +26,11 @@ export const Author = () => (
   <Wrapper>
     <AuthorAvatar />
     <div>
-      <Text>Miguel Ángel Durán</Text>
+      <H1>Miguel Ángel Durán</H1>
+      <Text>@midudev</Text>
       <Text>
-        <i>Ingeniero Frontend en Schibsted Spain</i>
+        <i>Arquitecto Frontend en Adevinta Spain</i>
       </Text>
-      <Text>Twitter: @midudev</Text>
     </div>
   </Wrapper>
 )

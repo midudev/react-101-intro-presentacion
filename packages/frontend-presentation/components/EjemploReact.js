@@ -32,8 +32,9 @@ const Small = styled.small`
   font-size: 14px;
 `
 
-function Avatar({seed}) { // eslint-disable-line
-  const url = 'http://i.pravatar.cc/100?' + seed
+function Avatar({seed}) {
+  // eslint-disable-line
+  const url = 'https://api.adorable.io/avatars/' + seed
   return <Img alt="" src={url} />
 }
 

@@ -25,7 +25,7 @@ import { Head } from 'mdx-deck'
 
 ---
 #### 🤑 ¡Qué mueven mucho dinero!
-<img src='./assets/dinero.gif' width='400' />
+<img src='./assets/dinero.gif' width='600' />
 
 ---
 ## Cierto. ✅
@@ -37,35 +37,18 @@ import { Head } from 'mdx-deck'
 ## ¿Y qué es React?
 ---
 
-import {ProposalTitle} from './components/ProposalTitle'
 import {ReactLogo} from './components/ReactLogo'
 
 <ReactLogo />
 
-# &lt;KickOffReact /&gt;
+# React 101
 
 import {Author} from './components/Author.js'
 
 <Author />
 
 ---
-<img src='./assets/scspain.png' width='500' />
-
----
-<div
-  style={{
-    alignItems: 'center',
-    justifyContent: 'center',
-    display: 'flex',
-    width: '100vw',
-    height: '100vw',
-    backgroundColor: '#fff'
-  }}>
-  <div>
-    <div><img src='./assets/scmspain01.png' style={{ width: '600px' }} /></div>
-    <div><img src='./assets/scmspain02.png' style={{ width: '750px' }} /></div>
-  </div>
-</div>
+<img src='./assets/adevinta.png' width='500' />
 
 ---
 ## 😳 pero...
@@ -104,14 +87,12 @@ import {Author} from './components/Author.js'
 ### 2️⃣  Oportunidades laborables
 <img src='./assets/jobs-react.png' style={{ maxWidth: '900px', width: '100%' }} />
 
-###### https://www.hntrends.com/2018/oct-react-holds-off-python.html?compare=React&compare=Angular+2&compare=AngularJS&compare=Vue
+###### https://www.hntrends.com/2019/dec-another-year-on-top-for-react.html?compare=React&compare=Vue&compare=AngularJS&compare=Angular+2
 
 ---
 
 ### 3️⃣  Presente brillante 🌟<br />Futuro prometedor 🚀
-<img src='./assets/react-conf.png' width='750' />
-
-###### https://conf.reactjs.org/
+<img src='./assets/new-facebook.jpg' width='750' />
 
 ---
 ## Ahora...<br />¿queréis saber más de React?
@@ -231,7 +212,7 @@ function Hello () { // un componente es una función! 👀
 ## Después, crearemos un div con un identificador
 ### donde renderizaremos nuestro componente
 ```html
-<div id="contenedor-app"></div>
+<div id="app"></div>
 ```
 ---
 ## Añadimos nuestro primer componente
@@ -251,8 +232,8 @@ function Hello () { // un componente es una función! 👀
 ```html
 <script>
   ReactDOM.render(
-    React.createElement(Hola),  // el qué
-    document.getElementById("contenedor-app") // dónde
+    React.createElement(Hello),  // el qué
+    document.getElementById("app") // dónde
   )
 </script>
 ```
@@ -262,7 +243,7 @@ function Hello () { // un componente es una función! 👀
 
 ##### ¡Vamos a hacerlo funcionar!
 
-<a href='https://codesandbox.io/s/9ypq6rk29p' target='_blank' rel='noopener'>Code Sandbox</a>
+<a href='https://codesandbox.io' target='_blank' rel='noopener'>Code Sandbox</a>
 ---
 ## Observaciones 👀
 ### ¡Qué feo tener que escribir React.createElement!
@@ -331,14 +312,14 @@ function Hello () { // sin jsx
 #### ambas, son lo mismo 👯‍♀️
 ---
 ## Revisemos en tiempo real 🕵️‍♂️
-<a rel='noopener' target='_blank' href='https://babeljs.io/en/repl.html#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYBt10QCgJSIDeAUIogE6pQjlIA8AJjAG4B8dAFgIzsDOADgEMwrZHHSC6AegHDWiALLgGcad3ZSmbYgF9EQA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=6.26.0&envVersion='>Babel REPL</a>
+<a rel='noopener' target='_blank' href='https://babeljs.io/en/repl.html#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYBt10QCgJSIDeiA9CYgM4xIBWFAHgFCKIBOqUIrSASqgIbQAdBHb8oqAKLpUAW1RgoOZi0QByABYBGNQBoVLMCEz7V65HHT9EAWXAATbIF4NwNI7gHg3AsPsBCNSryMAX0ZGEgAqRlBIWAQUDCwAdRgoDQApAGUADVwCYjJECBi6JhZ2Tm5EAB5tAD4LK1sHZ3dvCpIawMZQkiA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.11.6&externalPlugins='>Babel REPL</a>
 ---
 ## ¡Live coding! 👨‍💻
 <img src='./assets/livecoding.gif' width='550' />
 
 ##### Crear componente `<RandomAvatar size='100' />`
-###### usando servicio `http://i.pravatar.cc/100`
-<a href='https://codesandbox.io/dashboard/recent' target='_blank' rel='noopener'>Code Sandbox</a>
+###### usando servicio `https://api.adorable.io/avatars/123`
+<a href='https://codesandbox.io' target='_blank' rel='noopener'>Code Sandbox</a>
 
 
 
@@ -363,17 +344,15 @@ import {EjemploReact} from './components/EjemploReact'
 https://github.com/miduga/kick-off-react
 
 ---
-## Y gracias a Infojobs
-### sólo por hoy...
----
-
-## 💸 👨‍🏫 ⚛️
-## 2️⃣ ¡Gratis el curso para aprender React en Udemy!
-http://bit.ly/react-gratis
+<img src='./assets/curso-react.jpg' width='800' />
+<div style={{margin: 32}}>
+  <img src='./assets/youtube-logo.png' width='80' />
+  <h1 style={{margin: 0}}>youtube.com/midudev</h1>
+</div>
 
 ---
 # ¡Gracias! 🙇‍♂️
-### ¿Alguna pregunta?<br />¿Os puedo ayudar en algo?
+### ¿Alguna pregunta?<br />
 ## <br />
-#### Curso 💸 👨‍🏫 ⚛️<br />http://bit.ly/react-gratis
 #### Twitter<br />@midudev
+#### Youtube<br />youtube.com/midudev
